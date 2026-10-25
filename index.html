@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Xeedr</title>
+
+    <link rel="icon" href="resources/New Project logo.svg" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Styling for Book a Trip button */
+      .nav-buttons .book-trip-btn {
+        border: 2px solid #ececec;
+        border-radius: 25px;
+        padding: 8px 20px;
+        transition: all 0.3s ease;
+        background: transparent;
+        color: white;
+        font-weight: 600;
+      }
+
+      .nav-buttons .book-trip-btn:hover {
+        background: black;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: 2px solid black;
+      }
+    </style>
+    <script src="./cursor.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div id="page1">
+        <div id="cursor">
+          <h5>Play Reel</h5>
+        </div>
+
+        <video autoplay playsinline loop muted src="./resources/Webp.webm"></video>
+        <div id="page1-content">
+          <nav>
+            <img src="./resources/logo_slogan_bold_transparent.png" alt="LOGO" />
+            <div class="nav-buttons">
+              <button onclick="location.href='#page1'">Home</button>
+              <button onclick="location.href='#page4'">About Us</button>
+              <button onclick="location.href='#page2'">Services</button>
+              <button onclick="location.href='#client-reviews'">
+                Testimonials
+              </button>
+              <button onclick="location.href='Gallery/gallery.html'">
+                Gallery
+              </button>
+              <button onclick="location.href='contact.html'">
+                Business Connect
+              </button>
+              <button class="book-trip-btn" onclick="location.href='#page6'">Book a Trip</button>
+            </div>
+            <div class="hamburger" id="hamburgerIcon" onclick="toggleMenu()">
+              ☰
+            </div>
+          </nav>
+          <div class="hero-text">
+            <h1>ethereal</h1>
+          </div>
+        </div>
+      </div>
+      <div class="side-menu" id="sideMenu">
+        <div class="close-btn" onclick="toggleMenu()">×</div>
+        <button onclick="location.href='#page1'">Home</button>
+        <button onclick="location.href='#page4'">About Us</button>
+        <button onclick="location.href='#page2'">Services</button>
+        <button onclick="location.href='#client-reviews'">Testimonials</button>
+        <button onclick="location.href='Gallery/gallery.html'">Gallery</button>
+        <button onclick="location.href='contact.html'">Business Connect</button>
+        <button onclick="location.href='#page6'">Book a Trip</button>
+      </div>
+
+      <div id="page2" data-scroll-section>
+        <div id="page2-top">
+          <a href="Gallery/gallery.html">
+            <button id="go-live">Discover</button></a
+          >
+          <h2>India's Diverse</h2>
+          <h2>Tourism Treasures</h2>
+        </div>
+        <div id="page3-elements">
+          <div class="box">
+            <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="resources/mehendi-4004294_1280.jpg"
+              />
+              <img src="resources/mehendi-4004294_1280.jpg" alt="image" />
+            </picture>
+            <video
+              playsinline
+              loop
+              muted
+              src="resources/136039-764371293_small.webm"
+            ></video>
+          </div>
+          <div class="box">
+            <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="resources/peacock-8440548_1280.jpg"
+              />
+              <img src="resources/peacock-8440548_1280.jpg" alt="image" />
+            </picture>
+            <video
+              playsinline
+              loop
+              muted
+              src="resources/213971_Small.webm"
+            ></video>
+          </div>
+          <div class="box">
+            <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="resources/buddha-1024347_1280.jpg"
+              />
+              <img src="resources/buddha-1024347_1280.jpg" alt="image" />
+            </picture>
+            <video
+              playsinline
+              loop
+              muted
+              src="resources/133512-756991172_small.webm"
+            ></video>
+          </div>
+        </div>
+      </div>
+
+      <section id="page3-1">
+        <div id="page3-1-content" class="title-h2">
+          <h2>Travel by Destinations...</h2>
+          <p>
+            Explore our travel destinations based on your passions. Choose from
+            a variety of exciting adventures tailored for every type of
+            traveler!
+          </p>
+        </div>
+        <div class="image-row">
+          <div
+            class="image-container"
+            data-id="1"
+            data-destination="South India"
+          >
+            <picture>
+              <source
+                loading="lazy"
+                media="(min-width:650px)"
+                srcset="resources/fisherman-4984138_1280.jpg"
+              />
+              <img
+                loading="lazy"
+                src="resources/fisherman-4984138_1280.jpg"
+                alt="Destination 1"
+              />
+            </picture>
+            <div class="image-overlay">Kerala Backwaters</div>
+          </div>
+          <div
+            class="image-container"
+            data-id="2"
+            data-destination="North India"
+          >
+            <picture>
+              <source
+                loading="lazy"
+                media="(min-width:650px)"
+                srcset="resources/agra-4117671_1280.jpg"
+              />
+              <img
+                loading="lazy"
+                src="resources/agra-4117671_1280.jpg"
+                alt="Destination 2"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="image-row">
+          <div
+            class="image-container"
+            data-id="4"
+            data-destination="North East"
+          >
+            <picture>
+              <source
+                loading="lazy"
+                media="(min-width:650px)"
+                srcset="resources/india-7512923_1280.jpg"
+              />
+              <img
+                loading="lazy"
+                src="resources/india-7512923_1280.jpg"
+                alt="Destination 4"
+              />
+            </picture>
+          </div>
+          <div
+            class="image-container"
+            data-id="3"
+            data-destination="North West"
+          >
+            <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="resources/camel-5046296_1280.jpg"
+              />
+              <img
+                loading="lazy"
+                src="resources/camel-5046296_1280.jpg"
+                alt="Destination 3"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div style="height: 10dvh"></div>
+
+        <div id="page3-2-content" class="title-h2">
+          <h2>...or by Interest</h2>
+          <p>
+            Explore destinations tailored to your interests, from adventure to
+            relaxation. Choose the best fit for your travel passions!
+          </p>
+        </div>
+        <div class="image-row-2">
+          <div class="image-container" data-destination="Off-beat">
+            <picture>
+              <source
+                loading="lazy"
+                media="(min-width:650px)"
+                srcset="resources/adventure-pic.jpg"
+              />
+              <img
+                loading="lazy"
+                src="resources/adventure-pic.jpg"
+                alt="Adventure"
+              />
+            </picture>
+          </div>
+          <div class="image-container" data-destination="Relaxation">
+            <picture>
+              <source
+                loading="lazy"
+                media="(min-width:650px)"
+                srcset="resources/massage-7452918_1280.jpg"
+              />
+              <img
+                loading="lazy"
+                src="resources/massage-7452918_1280.jpg"
+                alt="Relaxation"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="image-row-2">
+          <div class="image-container" data-destination="Culture">
+            <picture>
+              <source
+                loading="lazy"
+                media="(min-width:650px)"
+                srcset="resources/kerala-4210410_1280.jpg"
+              />
+              <img
+                loading="lazy"
+                src="resources/kerala-4210410_1280.jpg"
+                alt="Culture"
+              />
+            </picture>
+          </div>
+          <div class="image-container" data-destination="Nature">
+            <picture>
+              <source
+                loading="lazy"
+                media="(min-width:650px)"
+                srcset="resources/nature.jpg"
+              />
+              <img loading="lazy" src="resources/nature.jpg" alt="Nature" />
+            </picture>
+          </div>
+        </div>
+
+        <div id="still-confused" class="title-h2 p-5">
+          <h2>Not Sure Where to Start?</h2>
+          <p>
+            We specialize in creating
+            <a href="#page6" class="custom-link">custom</a> travel experiences,
+            blending your passions with the perfect destinations. From unique
+            niches to personalized itineraries, we craft journeys tailored to
+            your every interest. Have any questions or concerns?
+            <a href="#page6" style="font-weight: bold; color: #395a7c"
+              >We’re here to help!</a
+            >
+          </p>
+        </div>
+
+        <div id="client-reviews" class="w3-container">
+          <h2>The Xeedr Experience</h2>
+          <p class="tagline">
+            See what our travelers have to say about their unforgettable
+            journeys
+          </p>
+          <div class="w3-content w3-display-container">
+            <div class="testimonialSlides">
+              <p>
+                "Exploring India with Xeedr was one of the best travel
+                experiences I’ve ever had. They curated a balanced itinerary
+                that allowed us to soak in the grandeur of the Taj Mahal, the
+                peaceful backwaters of Kerala, and the vibrant city life in
+                Mumbai. Every detail, from the boutique hotels to the private
+                tours, was flawless. Xeedr made India feel like home!"
+              </p>
+              <h4>- Matthew Collins, CA</h4>
+            </div>
+            <div class="testimonialSlides">
+              <p>
+                "India felt like a dream come true, thanks to Xeedr. I was
+                particularly impressed with how they personalized our itinerary
+                to include offbeat destinations like Hampi and the tea
+                plantations of Munnar. The local food tours were incredible, and
+                the guides were so passionate and engaging. I’d definitely
+                recommend Xeedr to anyone looking for a memorable Indian
+                adventure!"
+              </p>
+              <h4>- Sophie Fischer, DE</h4>
+            </div>
+            <div class="testimonialSlides">
+              <p>
+                Xeedr made my trip to India unforgettable. As someone traveling
+                solo, I appreciated the thoughtful planning and constant support
+                throughout. Whether it was attending a traditional Rajasthani
+                folk performance in Jaipur or cruising on the Ganges in
+                Varanasi, every experience felt special. They truly know how to
+                combine luxury with authenticity!
+              </p>
+              <h4>- Amelia Brown, UK</h4>
+            </div>
+            <div class="testimonialSlides">
+              <p>
+                "From start to finish, Xeedr delivered an incredible Indian
+                journey. I especially loved the attention to detail—they
+                arranged a private cooking class in Goa and even helped us catch
+                a cricket match in Bengaluru! Their customer service is
+                unmatched, and the memories I’ve made will last a lifetime.
+                Highly recommended for travelers looking for immersive
+                experiences."
+              </p>
+              <h4>- Liam O’Connor, IE</h4>
+            </div>
+            <div class="testimonialSlides">
+              <p>
+                "As someone with Indian roots, I wanted to explore the country
+                in depth, and Xeedr designed a beautiful, custom itinerary for
+                me. The spiritual tour through Varanasi, Bodh Gaya, and Amritsar
+                was enlightening, and their team ensured everything went
+                smoothly. Even the transport and logistics in India, which can
+                be challenging, were handled effortlessly. It was a truly
+                enriching experience!"
+              </p>
+              <h4>- Priya Patel, AU</h4>
+            </div>
+
+            <div
+              class="w3-center w3-container w3-section w3-large w3-display-bottommiddle"
+              style="width: 100%"
+            >
+              <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">
+                ❮
+              </div>
+              <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">
+                ❯
+              </div>
+              <span
+                class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                onclick="currentDiv(1)"
+              ></span>
+              <span
+                class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                onclick="currentDiv(2)"
+              ></span>
+              <span
+                class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                onclick="currentDiv(3)"
+              ></span>
+              <span
+                class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                onclick="currentDiv(4)"
+              ></span>
+              <span
+                class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                onclick="currentDiv(5)"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="page4">
+        <h1>Meet The Pioneers.</h1>
+        <div class="team">
+          <div class="team-image-carousel-container">
+            <div class="team-image-carousel">
+              <div class="team-image-container">
+                <img
+                  loading="lazy"
+                  src="resources/den_dad.jpg"
+                  alt="Image 1"
+                />
+              </div>
+              <div class="team-image-container">
+                <img
+                  loading="lazy"
+                  src="resources/20240307_121425.jpg"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="team-image-container">
+                <img
+                  loading="lazy"
+                  src="resources/den_bro_compressed.jpg"
+                  alt="Image 3"
+                />
+              </div>
+              <div class="team-image-container">
+                <img
+                  loading="lazy"
+                  src="resources/20240305_102843.jpg"
+                  alt="Image 4"
+                />
+              </div>
+              <!-- <div class="team-image-container">
+                <img
+                  loading="lazy"
+                  src="resources/Screenshot 2024-11-04 211918.png"
+                  alt="Image 5"
+                />
+              </div> -->
+              <div class="team-image-container">
+                <img
+                  loading="lazy"
+                  src="resources/den_dad.jpg"
+                  alt="Image 1"
+                />
+              </div>
+              <div class="team-image-container">
+                <img
+                  loading="lazy"
+                  src="resources/20240307_121425.jpg"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="team-image-container">
+                <img
+                  loading="lazy"
+                  src="resources/den_bro_compressed.jpg"
+                  alt="Image 3"
+                />
+              </div>
+              <div class="team-image-container">
+                <img
+                  loading="lazy"
+                  src="resources/20240305_102843.jpg"
+                  alt="Image 4"
+                />
+              </div>
+              <!-- <div class="team-image-container">
+                <img
+                  loading="lazy"
+                  src="resources/Screenshot 2024-11-04 211918.png"
+                  alt="Image 5"
+                />
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div id="about">
+          <p>
+            Welcome to Xeedr, where the warmth of family and a shared passion
+            for travel create extraordinary experiences! We are the Joshy
+            family—Joshy, Bincy, our elder son Don, our younger son Den, and our
+            beloved little Lion, Charlie. With over 20 years of exploring the
+            diverse landscapes and vibrant cultures of India, we have
+            transformed our love for adventure into a heartfelt mission to share
+            the hidden treasures of this incredible country with travelers from
+            around the globe. At Xeedr, we specialize in crafting customized
+            travel packages that cater to the unique desires of international
+            visitors seeking something truly special. We believe that travel is
+            about much more than ticking off tourist attractions; it’s about
+            immersing yourself in local cultures, forging connections, and
+            uncovering the stories that make each destination more memorable.
+            Our carefully curated journeys invite you to savor the rich flavors
+            of regional cuisines, explore enchanting offbeat locales, and engage
+            with the wonderful people who call India home. As a family-run
+            business, we take pride in infusing every trip with a personal
+            touch, ensuring that your experience is both authentic and
+            meaningful. Join us as we embark on this exciting journey together,
+            and let us help you discover the magic of India like never before,
+            creating cherished memories that will last a lifetime!
+          </p>
+        </div>
+      </div>
+
+      <div id="page6">
+        <div id="contact">
+          <h1 class="form-title">Your Custom Trip Awaits – Book Now!</h1>
+
+          <div id="toast" class="toast">
+            <div class="toast-content">
+              <div class="toast-icon">✓</div>
+              <div class="toast-message">Message sent successfully!</div>
+            </div>
+            <div class="toast-progress"></div>
+          </div>
+
+          <form id="contact-form">
+            <input type="hidden" name="access_key" value="ea12032c-6e3a-4ae9-974e-d1437e6ecc7d">
+
+  <input type="hidden" name="subject" value="New Customer Enquiry - Xeedr Homepage">
+            <div class="form-grid">
+              <div class="form-column">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone Number (Optional)"
+                  />
+                </div>
+                <div class="form-group">
+                  <select name="country" required>
+                    <option value="">Country of Residence</option>
+                    <option value="India">India</option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="UAE">United Arab Emirates</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Russia">Russia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Mexico">Mexico</option> 
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Other">Other(Specify in Message)</option>
+                  </select>
+                </div>
+                <div class="form-group date-range-group">
+                  <div class="date-label">Travel Dates:</div>
+                  <div class="date-inputs">
+                    <div class="date-input">
+                      <label for="travel-dates-from">From</label>
+                      <input
+                        type="date"
+                        id="travel-dates-from"
+                        name="travel_dates_from"
+                        required
+                      />
+                    </div>
+                    <div class="date-input">
+                      <label for="travel-dates-to">To</label>
+                      <input
+                        type="date"
+                        id="travel-dates-to"
+                        name="travel_dates_to"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <select name="number_of_travelers" required>
+                    <option value="">Number of Travelers</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="6+">6+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-column">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="destinations"
+                    name="preferred_destinations"
+                    placeholder="Preferred Destinations in India (Optional)"
+                  />
+                </div>
+                <div class="form-group">
+                  <select name="budget_range" required>
+                    <option value="">Budget Range</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="other">
+                      Other(Specify in Requirements)
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select name="how_did_you_hear" required>
+                    <option value="">How Did You Hear About Us?</option>
+                    <option value="internet">Internet</option>
+                    <option value="friend">Friend</option>
+                    <option value="other">Other(Specify in Message)</option>
+                  </select>
+                </div>
+                <div class="form-group interests-group">
+                  <label style="font-weight: 600">Travel Interests:</label>
+                  <div class="sizedBox" style="height: 2vh"></div>
+                  <div class="checkbox-grid">
+                    <div class="checkbox-item">
+                      <input
+                        type="checkbox"
+                        name="interests"
+                        id="cultural"
+                        value="Cultural Tours"
+                      />
+                      <label for="cultural">Cultural Tours</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input
+                        type="checkbox"
+                        name="interests"
+                        id="wellness"
+                        value="Wellness & Spa"
+                      />
+                      <label for="wellness">Wellness & Spa</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input
+                        type="checkbox"
+                        name="interests"
+                        id="adventure"
+                        value="Adventure Activities"
+                      />
+                      <label for="adventure">Adventure Activities</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input
+                        type="checkbox"
+                        name="interests"
+                        id="luxury"
+                        value="Luxury"
+                      />
+                      <label for="luxury">Luxury</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input
+                        type="checkbox"
+                        name="interests"
+                        id="nature"
+                        value="Nature & Wildlife"
+                      />
+                      <label for="nature">Nature & Wildlife</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input
+                        type="checkbox"
+                        name="interests"
+                        id="culinary"
+                        value="Food & Culinary Experiences"
+                      />
+                      <label for="culinary">Food & Culinary Experiences</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input
+                        type="checkbox"
+                        name="interests"
+                        id="heritage"
+                        value="Heritage & Architecture"
+                      />
+                      <label for="heritage">Heritage & Architecture</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input
+                        type="checkbox"
+                        name="interests"
+                        id="Religious"
+                        value="Religious & Spiritual Journeys"
+                      />
+                      <label for="Religious"
+                        >Religious & Spiritual Journeys</label
+                      >
+                    </div>
+                    <div class="checkbox-item">
+                      <input
+                        type="checkbox"
+                        name="interests"
+                        id="Nightlife"
+                        value="Nightlife & Entertainment"
+                      />
+                      <label for="Nightlife">Nightlife & Entertainment</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input
+                        type="checkbox"
+                        name="interests"
+                        id="other"
+                        value="Other"
+                      />
+                      <label for="other">Other (Specify in Requirements)</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-full-width">
+              <textarea
+                name="special_requirements"
+                placeholder="Special Requirements (Optional)"
+                rows="3"
+              ></textarea>
+              <textarea
+                name="message"
+                placeholder="Message / Additional Comments"
+                rows="3"
+              ></textarea>
+              <button type="submit">Enquire Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-content">
+          <nav class="footer-nav">
+            <a href="#page1-content">Home</a>
+            <a href="#page4">About</a>
+            <a href="Gallery/gallery.html">Gallery</a>
+            <a href="#client-reviews">Testimonials</a>
+            <a href="#page2">Services</a>
+          </nav>
+
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/share/18RuZGrRNc/"
+              aria-label="Facebook"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/xeedr.india/"
+              aria-label="Instagram"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a
+              href="https://x.com/xeedrtravels?t=ZXkthmlHs_0eN1n2rvFOng&s=09"
+              aria-label="Twitter"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://youtube.com/@xeedr-india?si=Kpvd9N1a8vPce27q"
+              aria-label="YouTube"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+                />
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="copyright">© 2024 Xeedr . All rights reserved.</div>
+
+        <button
+          class="scroll-top"
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+          aria-label="Scroll to top"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 15l-6-6-6 6" />
+          </svg>
+        </button>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script>
+      // Video interaction handling for .box elements only
+      document.querySelectorAll('.box').forEach(box => {
+        const video = box.querySelector('video');
+        
+        // Ensure video is paused initially
+        video.pause();
+        
+        // Desktop: Play on hover
+        box.addEventListener('mouseenter', () => {
+          video.play().catch(error => console.error('Video play failed:', error));
+        });
+        
+        box.addEventListener('mouseleave', () => {
+          video.pause();
+          video.currentTime = 0;
+        });
+
+        // Mobile: Play on tap
+        box.addEventListener('touchstart', (e) => {
+          e.preventDefault();
+          if (!video.classList.contains('playing')) {
+            video.play().catch(error => console.error('Video play failed:', error));
+            video.classList.add('playing');
+          }
+        });
+
+        // Reset video on touch end for mobile
+        box.addEventListener('touchend', () => {
+          setTimeout(() => {
+            video.pause();
+            video.currentTime = 0;
+            video.classList.remove('playing');
+          }, 500);
+        });
+      });
+
+      // Ensure all videos have playsinline to prevent fullscreen on iOS
+      document.querySelectorAll('video').forEach(video => {
+        video.setAttribute('playsinline', '');
+        video.setAttribute('webkit-playsinline', '');
+      });
+    </script>
+    <script src="script.js"></script>
+    <script src="email.js"></script>
+  </body>
+</html>

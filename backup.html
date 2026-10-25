@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+  <style>
+    #page4 {
+      height: 100vh;
+      width: 100%;
+      padding: 0vw 0;
+      position: relative;
+    }
+    #page4 h1 {
+      font-size: 9vw;
+      font-weight: 100;
+      border-bottom: 1px solid black;
+      width: 95%;
+      margin-left: 2%;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+      margin: 20px auto;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      gap: 10px;
+    }
+    .image-container {
+      width: 20%;
+      overflow: hidden;
+    }
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div id="page4">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Frame 1: 1,2,3,4,5 -->
+        <div class="swiper-slide">
+          <div class="image-container"><img src="resources/20240306_111311.jpg" alt="Image 1"></div>
+          <div class="image-container"><img src="resources/20240307_121425.jpg" alt="Image 2"></div>
+          <div class="image-container"><img src="resources/Screenshot 2024-11-04 210937.png" alt="Image 3"></div>
+          <div class="image-container"><img src="resources/20240305_102843.jpg" alt="Image 4"></div>
+          <div class="image-container"><img src="resources/Screenshot 2024-11-04 211918.png" alt="Image 5"></div>
+        </div>
+        <!-- Frame 2: 2,3,4,5,1 -->
+        <div class="swiper-slide">
+            <div class="image-container"><img src="resources/20240307_121425.jpg" alt="Image 2"></div>
+            <div class="image-container"><img src="resources/Screenshot 2024-11-04 210937.png" alt="Image 3"></div>
+            <div class="image-container"><img src="resources/20240305_102843.jpg" alt="Image 4"></div>
+            <div class="image-container"><img src="resources/Screenshot 2024-11-04 211918.png" alt="Image 5"></div>
+            <div class="image-container"><img src="resources/20240306_111311.jpg" alt="Image 1"></div>
+        </div>
+        <!-- Frame 3: 3,4,5,1,2 -->
+        <div class="swiper-slide">
+            <div class="image-container"><img src="resources/Screenshot 2024-11-04 210937.png" alt="Image 3"></div>
+            <div class="image-container"><img src="resources/20240305_102843.jpg" alt="Image 4"></div>
+            <div class="image-container"><img src="resources/Screenshot 2024-11-04 211918.png" alt="Image 5"></div>
+            <div class="image-container"><img src="resources/20240306_111311.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="resources/20240307_121425.jpg" alt="Image 2"></div>
+        </div>
+        <!-- Frame 4: 4,5,1,2,3 -->
+        <div class="swiper-slide">
+            <div class="image-container"><img src="resources/20240305_102843.jpg" alt="Image 4"></div>
+            <div class="image-container"><img src="resources/Screenshot 2024-11-04 211918.png" alt="Image 5"></div>
+            <div class="image-container"><img src="resources/20240306_111311.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="resources/20240307_121425.jpg" alt="Image 2"></div>
+            <div class="image-container"><img src="resources/Screenshot 2024-11-04 210937.png" alt="Image 3"></div>
+        </div>
+        <!-- Frame 5: 5,1,2,3,4 -->
+        <div class="swiper-slide">
+            <div class="image-container"><img src="resources/Screenshot 2024-11-04 211918.png" alt="Image 5"></div>
+            <div class="image-container"><img src="resources/20240306_111311.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="resources/20240307_121425.jpg" alt="Image 2"></div>
+            <div class="image-container"><img src="resources/Screenshot 2024-11-04 210937.png" alt="Image 3"></div>
+            <div class="image-container"><img src="resources/20240305_102843.jpg" alt="Image 4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      direction: "horizontal",
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      speed: 1000,
+    });
+  </script>
+</body>
+</html>
